@@ -23,8 +23,9 @@ namespace HQF.Tools.IISManager
                     CheckAndAddWebApplication(s, webApps, showSubApplications);
                 }
             }
-            catch
+            catch (Exception ex)
             {
+                Console.WriteLine(ex);
             }
             finally
             {
